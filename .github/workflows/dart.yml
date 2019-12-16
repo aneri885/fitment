@@ -8,14 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image:  google/dart:latest
+      image:  google/flutter:latest
 
     steps:
     - uses: actions/checkout@v1
     - name: Setup Node v${{ matrix.node-version }}
       uses: actions/setup-node@v1
     - name: Setup Dart ${{ matrix.dart-version }}
-      uses: DanTup/gh-actions/setup-dart
+      uses: DanTup/gh-actions/setup-dart@master
     - name: Setup Flutter ${{ matrix.flutter-version }}
       id: flutter
       uses: DanTup/gh-actions/setup-flutter@master
