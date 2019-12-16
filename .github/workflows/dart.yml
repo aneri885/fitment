@@ -11,10 +11,11 @@ jobs:
       image:  google/dart:latest
 
     steps:
+    - name: Setup Node v${{ matrix.node-version }}
+      uses: actions/setup-node@v1
     - name: Setup Flutter ${{ matrix.flutter-version }}
       id: flutter
       uses: DanTup/gh-actions/setup-flutter@master
-      
     - uses: actions/checkout@v1
     - name: Install dependencies
       run: pub get
