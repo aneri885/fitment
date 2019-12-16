@@ -15,7 +15,7 @@ jobs:
     - name: Setup Node v${{ matrix.node-version }}
       uses: actions/setup-node@v1
     - name: Setup Dart ${{ matrix.dart-version }}
-      uses: DanTup/gh-actions/setup-dart@master
+      uses: DanTup/gh-actions/setup-dart
     - name: Setup Flutter ${{ matrix.flutter-version }}
       id: flutter
       uses: DanTup/gh-actions/setup-flutter@master
