@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fitment/tabViews/closet.dart';
+import 'package:fitment/tabViews/outfits.dart';
+import 'package:fitment/tabViews/settings.dart';
 
 void main() {
   runApp(App());
@@ -17,27 +20,9 @@ class MainState extends State<App> {
   @override
   Widget build(BuildContext context) {
     final tabPages = <Widget>[
-      Center(
-        child: Image(
-          image: AssetImage('assets/tabBarIcons/closet.png'),
-          width: 64.0,
-          height: 64.0,
-        ),
-      ),
-      Center(
-        child: Image(
-          image: AssetImage('assets/tabBarIcons/outfits.png'),
-          width: 64.0,
-          height: 64.0,
-        ),
-      ),
-      Center(
-        child: Image(
-          image: AssetImage('assets/tabBarIcons/settings.png'),
-          width: 64.0,
-          height: 64.0,
-        ),
-      ),
+      Closet(),
+      Outfits(),
+      Settings(),
     ];
 
     final navBarItems = <BottomNavigationBarItem>[
@@ -50,7 +35,7 @@ class MainState extends State<App> {
               image: AssetImage('assets/tabBarIcons/closet.png'),
               width: 30.0,
               height: 30.0),
-          title: Text('closet')),
+          title: Text('closet', style: TextStyle(fontFamily: 'QS-M'))),
       BottomNavigationBarItem(
           activeIcon: Image(
               image: AssetImage('assets/tabBarIcons/outfits_selected.png'),
@@ -60,7 +45,7 @@ class MainState extends State<App> {
               image: AssetImage('assets/tabBarIcons/outfits.png'),
               width: 30.0,
               height: 30.0),
-          title: Text('outfits')),
+          title: Text('outfits', style: TextStyle(fontFamily: 'QS-M'))),
       BottomNavigationBarItem(
           activeIcon: Image(
               image: AssetImage('assets/tabBarIcons/settings_selected.png'),
@@ -70,7 +55,7 @@ class MainState extends State<App> {
               image: AssetImage('assets/tabBarIcons/settings.png'),
               width: 30.0,
               height: 30.0),
-          title: Text('settings')),
+          title: Text('settings', style: TextStyle(fontFamily: 'QS-M'))),
     ];
 
     assert(tabPages.length == navBarItems.length);
@@ -92,6 +77,7 @@ class MainState extends State<App> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          iconTheme: new IconThemeData(color: Color(0xFF3c3c3c)),
           title: Container(
             child: Row(
               children: [
@@ -102,7 +88,7 @@ class MainState extends State<App> {
                   fit: BoxFit.fitHeight,
                 ),
                 SizedBox(width: 16.0),
-                Text('fitment', style: TextStyle(color: Color(0xFF3C3C3C)))
+                Text('categories', style: TextStyle(fontFamily: 'QS-M', color: Color(0xFF3C3C3C)))
               ],
             ),
           ),

@@ -20,3 +20,10 @@ flutter:
   - assets/appIcons/
   - assets/categoryIcons/
   - assets/tabBarIcons/
+  fonts:
+  - family: QS-R
+    fonts:
+    - asset: fonts/Quicksand-Regular.ttf
+  - family: QS-M
+    fonts:
+    - asset: fonts/Quicksand-Medium.ttf  
