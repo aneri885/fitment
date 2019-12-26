@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fitment/tabViews/closet.dart';
 import 'package:fitment/tabViews/outfits.dart';
-import 'package:fitment/tabViews/settings.dart';
+import 'package:fitment/tabViews/profile.dart';
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 
 void main() {
   runApp(App());
@@ -16,25 +17,33 @@ class App extends StatefulWidget {
 
 class MainState extends State<App> {
   int currentTabIndex = 0;
+  String title = 'categories';
+  Icon leadingIcon = Icon(Icons.category, color: Color(0xFF6b34fb),);
 
   @override
   Widget build(BuildContext context) {
     final tabPages = <Widget>[
       Closet(),
       Outfits(),
-      Settings(),
+      Profile()
+    ];
+
+    final appBarTitles = <String>[
+      'categories',
+      'outfits',
+      'profile'
+    ];
+
+    final leadingIcons = <Icon>[
+      Icon(Icons.category, color: Color(0xFF6b34fb)),
+      Icon(Icons.wb_sunny, color: Color(0xFF6b34fb)),
+      Icon(Icons.face, color: Color(0xFF6b34fb))
     ];
 
     final navBarItems = <BottomNavigationBarItem>[
       BottomNavigationBarItem(
-          activeIcon: Image(
-              image: AssetImage('assets/tabBarIcons/closet_selected.png'),
-              width: 30.0,
-              height: 30.0),
-          icon: Image(
-              image: AssetImage('assets/tabBarIcons/closet.png'),
-              width: 30.0,
-              height: 30.0),
+          activeIcon: Icon(EvaIcons.shoppingBag, color: Color(0xFF6B34FB), size: 35.0),
+          icon: Icon(EvaIcons.shoppingBagOutline, color: Color(0xFF3c3c3c), size: 35.0),
           title: Text('closet', style: TextStyle(fontFamily: 'QS-M'))),
       BottomNavigationBarItem(
           activeIcon: Image(
@@ -47,15 +56,9 @@ class MainState extends State<App> {
               height: 30.0),
           title: Text('outfits', style: TextStyle(fontFamily: 'QS-M'))),
       BottomNavigationBarItem(
-          activeIcon: Image(
-              image: AssetImage('assets/tabBarIcons/settings_selected.png'),
-              width: 30.0,
-              height: 30.0),
-          icon: Image(
-              image: AssetImage('assets/tabBarIcons/settings.png'),
-              width: 30.0,
-              height: 30.0),
-          title: Text('settings', style: TextStyle(fontFamily: 'QS-M'))),
+          activeIcon: Icon(EvaIcons.person, color: Color(0xFF6B34FB), size: 35.0),
+          icon: Icon(EvaIcons.personOutline, color: Color(0xFF3c3c3c), size: 35.0),
+          title: Text('profile', style: TextStyle(fontFamily: 'QS-M'))),
     ];
 
     assert(tabPages.length == navBarItems.length);
@@ -66,6 +69,8 @@ class MainState extends State<App> {
       onTap: (int index) {
         setState(() {
           currentTabIndex = index;
+          title = appBarTitles[index];
+          leadingIcon = leadingIcons[index];
         });
       },
       backgroundColor: Color(0x88ECECEC),
@@ -77,21 +82,16 @@ class MainState extends State<App> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          iconTheme: new IconThemeData(color: Color(0xFF3c3c3c)),
-          title: Container(
-            child: Row(
-              children: [
-                Image(
-                  image: AssetImage('assets/appIcons/category_accent.png'),
-                  width: 32.0,
-                  height: 32.0,
-                  fit: BoxFit.fitHeight,
-                ),
-                SizedBox(width: 16.0),
-                Text('categories', style: TextStyle(fontFamily: 'QS-M', color: Color(0xFF3C3C3C)))
-              ],
+          leading: leadingIcon,
+          title: Text(title, style: TextStyle(fontFamily: 'QS-M', color: Color(0xFF3C3C3C))),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.more_vert, color: Color(0xFF6B34FB)),
+              onPressed: () {
+                print('More');
+              },
             ),
-          ),
+          ],
           backgroundColor: Color(0x88ECECEC),
           elevation: 0.0,
         ),

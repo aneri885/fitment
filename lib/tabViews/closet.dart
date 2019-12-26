@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 
 class Closet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Image(
-          image: AssetImage('assets/tabBarIcons/closet.png'),
-          width: 64.0,
-          height: 64.0,
+
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(EvaIcons.plusOutline),
+        backgroundColor: Color(0xFF6B34FB),
+        onPressed: () {
+              print('Add clothes');
+            },
         ),
-      )
-    );
+      );
   }
 }

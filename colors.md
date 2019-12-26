@@ -26,3 +26,6 @@
   
   **SecondaryTextColor:** `#ffffff`
   
+## Other
+
+  **Cancel:** `DA4036`
