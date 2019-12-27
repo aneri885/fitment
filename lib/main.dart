@@ -35,9 +35,9 @@ class MainState extends State<App> {
     ];
 
     final leadingIcons = <Icon>[
-      Icon(Icons.category, color: Color(0xFF6b34fb)),
-      Icon(Icons.wb_sunny, color: Color(0xFF6b34fb)),
-      Icon(Icons.face, color: Color(0xFF6b34fb))
+      Icon(Icons.category, color: Color(0xFF6b34fb), size: 26.0,),
+      Icon(EvaIcons.sun, color: Color(0xFF6b34fb), size: 26.0,),
+      Icon(EvaIcons.personOutline, color: Color(0xFF6b34fb), size: 26.0,)
     ];
 
     final navBarItems = <BottomNavigationBarItem>[
@@ -86,7 +86,7 @@ class MainState extends State<App> {
           title: Text(title, style: TextStyle(fontFamily: 'QS-M', color: Color(0xFF3C3C3C))),
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.more_vert, color: Color(0xFF6B34FB)),
+              icon: Icon(EvaIcons.moreVerticalOutline, color: Color(0xFF6B34FB), size: 26.0,),
               onPressed: () {
                 print('More');
               },
