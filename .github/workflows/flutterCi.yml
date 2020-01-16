@@ -27,3 +27,10 @@ jobs:
       
       - name: Build Flutter
         run: flutter build aot
+      
+      - name: Analyze Dart code
+        run: flutter analyze
+        
+      - name: Run tests
+        run: flutter test
+        
