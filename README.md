@@ -1,6 +1,6 @@
 # fitment
 
-[![codecov](https://codecov.io/gh/mrcgrhrdt/fitment/branch/master/graph/badge.svg)](https://codecov.io/gh/mrcgrhrdt/fitment)
+[![codecov](https://codecov.io/gh/mrcgrhrdt/fitment/branch/master/graph/badge.svg?token=0LAKohGZQn)](https://codecov.io/gh/mrcgrhrdt/fitment)
 
 ## Getting Started
 
