@@ -1,8 +1,8 @@
 # fitment
 
+![Flutter CI](https://github.com/mrcgrhrdt/fitment/workflows/Flutter%20CI/badge.svg)
 [![codecov](https://codecov.io/gh/mrcgrhrdt/fitment/branch/master/graph/badge.svg?token=0LAKohGZQn)](https://codecov.io/gh/mrcgrhrdt/fitment)
 
-[![Flutter CI](https://github.com/mrcgrhrdt/fitment/workflows/Flutter%20CI/badge.svg)]
 
 ## Overview
 
