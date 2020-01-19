@@ -1,5 +1,7 @@
 # fitment
 
+[![codecov](https://codecov.io/gh/mrcgrhrdt/fitment/branch/master/graph/badge.svg)](https://codecov.io/gh/mrcgrhrdt/fitment)
+
 ## Getting Started
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
