@@ -2,22 +2,10 @@
 
 [![codecov](https://codecov.io/gh/mrcgrhrdt/fitment/branch/master/graph/badge.svg?token=0LAKohGZQn)](https://codecov.io/gh/mrcgrhrdt/fitment)
 
-## Getting Started
+## Overview
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-### Installing
-
-How to install flutter in:
-
-- [Windows](https://flutter.dev/docs/get-started/install/windows)
-- [macOS](https://flutter.dev/docs/get-started/install/macos)
-- [linux](https://flutter.dev/docs/get-started/install/linux)
+fitment is an app for creating outfits automatically for you, based on your style.
+The app takes into consideration weather and season to show you the best outfits, with your own clothes 
 
 ## Versioning
 
@@ -25,7 +13,7 @@ We use [GitHub](https://github.com/mrcgrhrdt/fitment) for version control.
 
 ## Authors
 
-* **Maurice Gerhardt** - *Lead*
+* **Maurice Gerhardt** - mrcgrhrdt@gmail.com -  *Lead*
 
 ## License
 
