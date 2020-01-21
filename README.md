@@ -15,7 +15,7 @@ We use [GitHub](https://github.com/mrcgrhrdt/fitment) for version control.
 
 ## Authors
 
-* **Maurice Gerhardt** - mrcgrhrdt@gmail.com -  *Lead*
+* **Maurice Gerhardt** - maurice@mgcodes.one -  *Lead*
 
 ## License
 
