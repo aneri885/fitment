@@ -61,6 +61,7 @@ class MainState extends State<App> {
           title: Text('profile', style: TextStyle(fontFamily: 'QS-M'))),
     ];
 
+
     assert(tabPages.length == navBarItems.length);
     final bottomNavBar = BottomNavigationBar(
       items: navBarItems,
