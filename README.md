@@ -1,7 +1,6 @@
 # fitment
 
-![Flutter CI](https://github.com/mrcgrhrdt/fitment/workflows/Flutter%20CI/badge.svg)
-![Flutter CI - develop](https://github.com/mrcgrhrdt/fitment/workflows/Flutter%20CI/badge.svg?branch=develop)
+![Flutter CI](https://github.com/mrcgrhrdt/fitment/workflows/Flutter%20CI/badge.svg?branch=develop)
 [![codecov](https://codecov.io/gh/mrcgrhrdt/fitment/branch/master/graph/badge.svg?token=0LAKohGZQn)](https://codecov.io/gh/mrcgrhrdt/fitment)
 
 
