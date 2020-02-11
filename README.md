@@ -7,7 +7,10 @@
 ## Overview
 
 fitment is an app for creating outfits automatically for you, based on your style.
-The app takes into consideration weather and season to show you the best outfits, with your own clothes 
+The app takes into consideration weather and season to show you the best outfits, with your own clothes
+
+This app is a side project and I'm not focusing on it, the app is not published yet
+
 
 ## Versioning
 
